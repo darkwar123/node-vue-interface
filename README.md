@@ -1,6 +1,6 @@
-# node-csgotune-interface
+# node-vue-interface
 
-> A vue.js user interface for csgotune.com
+> A simple vue.js user interface
 
 ## Build Setup
 

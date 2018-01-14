@@ -5,6 +5,11 @@
 </template>
 
 <script>
+  /* Global dependences should be here */
+  global.$ = global.jQuery = require('jquery');
+  global.Tether = require('tether');
+  require('bootstrap');
+
   export default {
     name: 'app',
   };
@@ -12,7 +17,6 @@
 
 <!--Global styles should be here-->
 <style lang="scss">
-  @import './assets/scss/variables.scss';
   @import './assets/scss/app.scss';
 
   @import '~bootstrap/dist/css/bootstrap.css';

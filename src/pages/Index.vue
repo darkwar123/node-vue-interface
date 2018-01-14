@@ -1,16 +1,18 @@
 <template>
   <div class="hello">
     <img src="../assets/images/logo.png">
-    <h1><i class="fa fa-header"></i>{{ msg }}</h1>
+    <h1>
+      {{ msg }}
+    </h1>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'index',
     data() {
       return {
-        msg: 'ello World',
+        msg: 'Hello World',
       };
     },
   };

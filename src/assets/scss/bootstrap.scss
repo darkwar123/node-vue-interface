@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-font-family-primary {
+  font-family: $primary-font-family !important;
+}
+
+.text-font-family-secondary {
+  font-family: $secondary-font-family !important;
+}

@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,700|Roboto:400,500,700&subset=cyrillic');
 
-$primary-font-family: 'Roboto', sans-serif;
-$secondary-font-family: 'Open Sans', sans-serif;
+:root {
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Open Sans', sans-serif;
+
+  --color: #000000;
+  --gradient-first-color: #ffffff;
+  --gradient-second-color: #ffffff;
+  --background: linear-gradient(147deg, var(--gradient-first-color), var(--gradient-second-color));
+}

@@ -9,16 +9,24 @@
 
   export default {
     name: 'layout',
-    components: { },
+    components: {
+
+    },
+    created() {
+      this.$parent.$emit('loaded');
+    },
     beforeRouteEnter(to, from, next) {
-      return next();
+      api.connect().then(() => {
+        setTimeout(() => {
+          next();
+        }, 1000);
+      })
+      .catch(console.log);
     },
   };
 </script>
 
-<style lang="scss" scoped>
-  @import "../assets/scss/variables.scss";
-
+<style lang="scss">
   #layout {
     width: 100%;
     height: 100%;

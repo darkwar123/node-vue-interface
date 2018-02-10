@@ -5,13 +5,13 @@
 }
 
 .text-bold {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .text-font-family-primary {
-  font-family: $primary-font-family !important;
+  font-family: var(--primary-font-family) !important;
 }
 
 .text-font-family-secondary {
-  font-family: $secondary-font-family !important;
+  font-family: var(--secondary-font-family) !important;
 }

@@ -1,7 +1,7 @@
 {
-  "name": "node-csgotune-interface",
+  "name": "node-vue-interface",
   "version": "1.0.0",
-  "description": "A vue.js user interface for csgotune.com",
+  "description": "A vue.js user interface",
   "author": "darkwar123 <gadjiev1996@mail.ru>",
   "private": true,
   "scripts": {
@@ -20,7 +20,8 @@
     "socket.io-client": "^2.0.4",
     "tether": "^1.4.3",
     "vue": "^2.5.13",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

@@ -2,9 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Layout from '@/components/Layout';
 
-import Index from '@/pages/Index';
-
 Vue.use(Router);
+
+import Index from '@/pages/Index';
 
 export default new Router({
   mode: 'history',

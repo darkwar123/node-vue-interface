@@ -17,9 +17,7 @@
     },
     beforeRouteEnter(to, from, next) {
       api.connect().then(() => {
-        setTimeout(() => {
-          next();
-        }, 1000);
+        next();
       })
       .catch(console.log);
     },

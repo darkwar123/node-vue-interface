@@ -75,8 +75,6 @@ let api = {
       let url = this.apiUrl + '/' + name + method;
       let nameOfMethod = method.split('/')[1];
 
-      console.log(url);
-
       /**
        * Api method
        * @param {Object} query

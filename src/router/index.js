@@ -13,7 +13,7 @@ export default new Router({
       path: '/',
       component: Layout,
       children: [
-        { path: '/', name: 'Index', component: Index }
+        { path: '/', name: 'Index', component: Index },
       ]
     },
   ],

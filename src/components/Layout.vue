@@ -1,16 +1,23 @@
 <template>
   <section id="layout">
-    <router-view/>
+    <app-header/>
+    <div class="app-content">
+      <router-view/>
+    </div>
+    <app-footer/>
   </section>
 </template>
 
 <script>
   import api from '@/api';
+  import Header from '@/components/Header';
+  import Footer from '@/components/Footer';
 
   export default {
     name: 'layout',
     components: {
-
+      'app-header': Header,
+      'app-footer': Footer,
     },
     created() {
       this.$parent.$emit('loaded');
@@ -26,10 +33,12 @@
 
 <style lang="scss">
   #layout {
-    width: 100%;
-    height: 100%;
-    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
+
+    .app-content {
+      flex: 1 0;
+      padding: 1rem;
+    }
   }
 </style>

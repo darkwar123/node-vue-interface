@@ -33,8 +33,8 @@
 
 <!--Global styles should be here-->
 <style lang="scss">
-  @import './assets/scss/app.scss';
-
   @import '~bootstrap/dist/css/bootstrap.css';
   @import '~font-awesome/css/font-awesome.css';
+  
+  @import './assets/scss/app.scss';
 </style>

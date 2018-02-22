@@ -3,7 +3,7 @@
     Index
     <br>
     <simple-modal></simple-modal>
-    <button class="btn btn-primary" @click="$modal.show('simple-modal')">Open SimpleModal</button>
+    <button class="btn btn-primary" @click="showSimpleModal">Open SimpleModal</button>
   </div>
 </template>
 
@@ -15,6 +15,11 @@
     components: {
       'simple-modal': SimpleModal,
     },
+	methods: {
+	  showSimpleModal() {
+	    $('#simple-modal').modal('show');
+	  },
+	},
   };
 </script>
 

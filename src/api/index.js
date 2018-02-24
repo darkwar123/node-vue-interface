@@ -13,7 +13,7 @@ let api = {
    * @return {Promise}
    * */
   connect({ url = serverUrl } = { }) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       if (this.connection && this.connection.connected) {
         return resolve(this.connection);
       }
@@ -22,6 +22,11 @@ let api = {
 
       this.connection.once('connect', () => {
         return resolve(this.connection);
+      });
+	  
+
+      this.connection.on('reconnect_attempt', () => {
+        this.connection.io.opts.transports = ['polling', 'websocket'];
       });
     });
   },
